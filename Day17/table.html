@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <!-- 20/6/24 -->
+    <form action="/main.py" method="post">
+      <fieldset>
+        <legend>Login</legend>
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="enter your name"
+        /><br /><br />
+        <label for="password">Password</label>
+        <!-- type="password" will mask/hide
+        the password -->
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        /><br /><br />
+        <button type="submit">Login</button>
+        <button type="reset">clear</button>
+      </fieldset>
+    </form>
+    <br /><br />
+
+    <div>
+      <form action="/main.py" method="post">
+        <fieldset style="color: red">
+          <legend>Details</legend>
+          <label for="firstname">firstname</label>
+          <input type="text" name="firstname" id="firstname" /><br /><br />
+          <label for="lastname">lastname</label>
+          <input type="text" name="lastname" id="lastname" /><br /><br />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" /><br /><br />
+          <label for="tel">Contact</label>
+          <input type="tel" name="tel" id="tel" /><br /><br />
+          <!-- radio buttons -->
+          <span>Select a gender</span><br /><br />
+          <input type="radio" name="gender" id="Male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="femlae" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="others" value="others" />
+          <label for="others">Others</label>
+          <!-- check boxes -->
+          <br /><br />
+          <span>Select a Skills</span><br /><br />
+          <input type="checkbox" name="skills" id="html" value="html" />
+          <label for="html">HTML</label>
+
+          <input type="checkbox" name="skills" id="js" value="js" />
+          <label for="js">JavaScript</label>
+
+          <input type="checkbox" name="skills" id="python" />
+          <label for="python">python</label><br /><br />
+
+          <!-- slect dropdown -->
+          <label for="city">Select acity</label>
+          <select name="city" id="city">
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbais</option>
+            <option value="Chennai">Chennai</option>
+          </select>
+
+          <!-- slect tag -->
+          <label for="vehicle">Select a vehicle</label>
+          <select name="vehicle" id="vehicle">
+            <optgroup label="2 wheelers">
+              <option value="re">Royal enfield</option>
+              <option value="re">GT continet</option>
+              <option value="re">Duke</option>
+              <option value="re">R15</option>
+            </optgroup>
+            <optgroup label="4 wheelers">
+              <option value="mustang">Ford mustang</option>
+              <option value="Nissan GT">Nissan GT</option>
+              <option value="Red bull">Red bull</option>
+              <option value="Benz">Benz</option>
+            </optgroup></select
+          ><br /><br />
+
+          <!-- datalist -->
+          <label for="habit">Select a habits</label>
+          <input list="habits" id="habit" name="habit" />
+          <datalist id="habits">
+            <option value="movies" label="movies"></option>
+            <option value="reading" label="reading"></option>
+            <option value="riding" label="riding"></option>
+          </datalist>
+
+          <br /><br />
+
+          <!-- textarea -->
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea><br /><br />
+
+          <textarea name="" id="" cols="30" rows="0"></textarea>
+
+          <br /><br />
+          <button type="submit" style="background-color: #aaa">submit</button>
+          <button type="reset" style="background-color: #aaa">clear</button>
+        </fieldset>
+      </form>
+    </div>
+    <br /><br />
+    <!-- 19/6/24 -->
+    <form action="../main.py" method="post" target="_blank"></form>
+    <a href="../index.html" target="_blank">This document for present h1-h6 </a>
+    <!-- external navigation -->
+    <!-- internal navigation -->
+    <h1>List of games</h1>
+    <a href="#football">Football</a><br />
+    <a href="#tabletennis">tabletennis</a><br />
+    <a href="#cricket">cricket</a><br />
+    <a href="#hockey">hockey</a><br />
+    <div id="football">
+      <h2>Football</h2>
+      <p>
+        <img src="" alt="Football" height="450px" width="350px" /><br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere soluta
+        optio voluptas, voluptate aliquid dolorem error commodi, pariatur labore
+        possimus distinctio harum ipsam, perspiciatis dolor.
+      </p>
+    </div>
+
+    <div id="tabletennis">
+      <h2>Tabletennis</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora
+        recusandae aspernatur ipsa, soluta esse eaque deleniti alias excepturi
+        cupiditate ipsam itaque architecto nobis quasi reprehenderit asperiores
+        voluptatibus, ad corporis, accusantium necessitatibus? Tempora error,
+        unde corporis voluptates quasi facilis? Minus eaque, excepturi fugiat
+        error accusantium maiores quibusdam pariatur iure corrupti!
+      </p>
+    </div>
+
+    <!-- 18/6/2024 -->
+    <table border="1px" cellpadding="10px" style="border-collapse: collapse">
+      <thead>
+        <h1>Clickable imges/links</h1>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Company Name</th>
+          <th>Image</th>
+          <th>links</th>
+        </tr>
+        <tr>
+          <td>Google</td>
+          <td>
+            <a href="https://www.google.com" target="_blank">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WwgH7Nl5_AW9nDCnR2Ozb_AU3rkIbSJdAg&s"
+                alt="Google"
+                height="150px"
+                width="150px"
+            /></a>
+          </td>
+          <td><a href="https://google.com" target="_blank">link</a></td>
+        </tr>
+        <tr>
+          <td>Facebook</td>
+          <td>
+            <a href="https://facebook.com" target="_blank">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+                alt="Facebook"
+                height="150px"
+                width="150px"
+            /></a>
+          </td>
+          <td><a href="https://facebook.com" target="_blank">link</a></td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>
+            <a href="https://twitter.com" target="_blank">
+              <img
+                src="https://www.shutterstock.com/image-illustration/set-new-twitter-logo-rebrand-260nw-2385951289.jpg"
+                alt="x"
+                height="150px"
+                width="150px"
+            /></a>
+          </td>
+          <td><a href="https://twitter.com" target="_blank">link</a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        &copy Raghu
+      </tfoot>
+
+      <div>
+        <table
+          border="1px"
+          cellpadding="10px"
+          style="border-collapse: collapse"
+        >
+          <thead>
+            <h2>Daily Table</h2>
+          </thead>
+          <tbody>
+            <tr style="background-color: cadetblue">
+              <th><b>DAY/TIME</b></th>
+              <th>7am</th>
+              <th>8am</th>
+              <th>9am</th>
+              <th>10am</th>
+              <th rowspan="4" style="background-color: yellow">
+                B<br />r<br />e<br />a<br />k
+              </th>
+              <th>12pm</th>
+              <th>1pm</th>
+              <th>2pm</th>
+            </tr>
+            <tr style="background-color: rgb(42, 194, 31)">
+              <td><b>Monday</b></td>
+              <td>BreakFast</td>
+              <!-- If we do colspan , at last it add extra column, that's why we comment one cell <td>-->
+              <td colspan="2">Get into Bus</td>
+              <td>Attend classes</td>
+              <!-- <td></td> -->
+              <!-- <td></td> -->
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Tuesday</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td colspan="2">GYM</td>
+              <!-- <td></td> -->
+            </tr>
+            <tr>
+              <td><b>Wednesday</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td> -->
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </table>
+    <!-- 19/4/24 -->
+  </body>
+</html>

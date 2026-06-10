@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            flex: 1 1 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+        @media (min-width: 600px) {
+            .box { flex: 1 1 50%; }
+        }
+        @media (min-width: 900px) {
+            .box { flex: 1 1 25%; }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Grid Layout</h2>
+    <div class="container">
+        <div class="box" style="background-color: #f8b400;">Box 1</div>
+        <div class="box" style="background-color: #6a0572;">Box 2</div>
+        <div class="box" style="background-color: #0e79b2;">Box 3</div>
+        <div class="box" style="background-color: #e03b8b;">Box 4</div>
+    </div>
+</body>
+</html>

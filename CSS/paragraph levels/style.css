@@ -1,0 +1,32 @@
+/* .main-he{
+    color: rebeccapurple;
+}
+
+.sec-h {
+    color: red;
+}
+
+.footer {
+    color: blue;
+}
+
+.align-center {
+    text-align: center;
+} */
+
+
+/* div p {
+    color: yellow;
+} */
+
+div>p{
+    color: blue;
+}
+
+div+p{
+    color: brown;
+}
+
+div~[p{
+    color: blueviolet;
+}]

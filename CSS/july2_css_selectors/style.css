@@ -1,0 +1,149 @@
+/* reviewd on 4/6/2025 */
+*{
+    background: #000;
+    color: #fff;
+}
+h1::after{
+    /* color: #000; */
+    content: '$$$';
+}
+
+h1::before {
+    content: '@';
+}
+
+h1::first-line {
+    font-size: 50px;
+}
+/* reviewd on 5/6/2025 */
+
+/* reviewd on 6/6/2025 */
+
+/*  */
+
+p::first-line {
+  text-transform: uppercase;
+  content: '$';
+}
+
+::marker {
+  font-size: small;
+  color: red;
+}
+p::selection {
+  background-color: red;
+}
+
+li {
+  list-style-type: none;
+}
+
+li::before {
+  content: "** ";
+}
+
+li::after {
+  content: "**";
+}
+
+
+/* attribute selector */
+/* [id]{
+    color:rgb(24, 172, 103);
+} */
+
+/* [title]{
+    color: brown;
+} */
+
+/* attribute value selector */
+/* [id=heading]{
+    color: orange;
+}
+
+[id="para"] {
+  color: rgb(48, 8, 159);
+} */
+
+/* variation in attribute value selector */
+/* specific word */
+
+
+/* [title~="a"] {
+  color: rgb(24, 197, 96);
+} */
+
+/*  */
+/* li:first-child{
+    color: blueviolet;
+} */
+
+/* ol>div:first-of-type{
+    color: blue;
+}
+li:first-of-type{
+    color: yellow;
+} */
+
+/* li:last-of-type{
+    color: #c2b224;
+} */
+
+/*  `ol has li then it's use lionly-child will works
+        if it has other child it  li:only-of-type*/
+
+/* li:nth-last-child(even){
+    color: red;
+} */
+
+/* li:nth-of-type(even){
+    color: burlywood;  */
+
+/* li:only-of-type{ 
+    color: rgb(239, 26, 26) ;
+} */
+
+/* ol>li:only-of-type{
+    color: #2b27a1;
+}  */
+
+/* li:nth-child(even){
+    color: #4f4fd7;
+}
+
+li:first-child(even){
+    color: #4f4fd7;
+} */
+
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+
+div:hover{
+background-color: yellow;
+}
+
+input:focus{
+    background-color: #ddd;
+    outline: 2px solid blue;
+}
+
+a:link{
+    text-decoration: none;
+    color: red;
+}
+
+a:visited{
+    color: rgb(46, 13, 235);
+}
+
+a:active{
+    color: rgb(85, 218, 19);
+}
+
+a:hover{
+    color: black;
+} */

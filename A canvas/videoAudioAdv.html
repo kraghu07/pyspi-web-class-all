@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Advanced Audio and Video Controls</h2>
+
+    <!-- Video with custom controls -->
+    <video id="myVideo" width="320" height="240" preload="metadata">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video><br>
+    <button onclick="playPauseVideo()">Play/Pause</button>
+    <button onclick="muteUnmuteVideo()">Mute/Unmute</button>
+
+    <script>
+        const video = document.getElementById('myVideo');
+
+        function playPauseVideo() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function muteUnmuteVideo() {
+            video.muted = !video.muted;
+        }
+    </script>
+
+    <!-- Audio with visualization using canvas -->
+    <h2>Audio Visualization</h2>
+    <audio id="myAudio" controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <canvas id="audioCanvas" width="500" height="100"></canvas>
+
+    <script>
+        const audio = document.getElementById('myAudio');
+        const audioCanvas = document.getElementById('audioCanvas');
+        const audioCtx = new AudioContext();
+        const canvasCtx = audioCanvas.getContext('2d');
+        const analyser = audioCtx.createAnalyser();
+
+        const source = audioCtx.createMediaElementSource(audio);
+        source.connect(analyser);
+        analyser.connect(audioCtx.destination);
+
+        analyser.fftSize = 256;
+        const bufferLength = analyser.frequencyBinCount;
+        const dataArray = new Uint8Array(bufferLength);
+
+        function drawAudioVisualization() {
+            requestAnimationFrame(drawAudioVisualization);
+            analyser.getByteFrequencyData(dataArray);
+            
+            canvasCtx.fillStyle = '#000';
+            canvasCtx.fillRect(0, 0, audioCanvas.width, audioCanvas.height);
+
+            const barWidth = (audioCanvas.width / bufferLength) * 2.5;
+            let x = 0;
+
+            for (let i = 0; i < bufferLength; i++) {
+                const barHeight = dataArray[i];
+                canvasCtx.fillStyle = 'rgb(' + (barHeight + 100) + ',50,50)';
+                canvasCtx.fillRect(x, audioCanvas.height - barHeight / 2, barWidth, barHeight / 2);
+                x += barWidth + 1;
+            }
+        }
+
+        audio.onplay = () => {
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            drawAudioVisualization();
+        };
+    </script>
+</body>
+</html>

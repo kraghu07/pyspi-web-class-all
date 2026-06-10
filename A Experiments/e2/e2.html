@@ -1,0 +1,77 @@
+<!-- 
+ 
+Learn about Transition
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent {
+        height: 400px;
+        width: 400px;
+        background-color: blueviolet;
+      }
+      .child {
+        height: 50%;
+        width: 50%;
+        background-color: red;
+        transition: 1s;
+        animation-name: left-right;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        animation-delay: 0.3s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        /* animation-direction: alternate; */
+      }
+      .parent:hover .child {
+        animation-play-state: paused;
+      }
+      @keyframes left-right {
+        /* from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(100%);
+            }    */
+        0% {
+          background-color: yellow;
+          transform: translate(0);
+        }
+        33% {
+          transform: translateY(100%);
+        }
+        66% {
+          transform: translateX(100%) translateY(100%);
+        }
+        80% {
+          background-color: blue;
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

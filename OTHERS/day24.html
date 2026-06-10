@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="main.py" method="get">
+      <fieldset>
+        <legend>Input attribute</legend>
+        <div>
+          <!-- <span>1</span>  input is used to override form in django-->
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" multiple /><br /><br />
+
+          <label for="file">Resume</label><br /><br />
+          <input type="file" name="file" id="file" multiple /><br /><br />
+
+          <label for="sport">name of sports</label>
+          <select name="sport" id="sport" multiple size="2">
+            <option value="f1">f1</option>
+            <option value="cricket">cricket</option>
+            <option value="hockey">hockey</option></select
+          ><br /><br />
+
+          <label for="movie">Rating</label><br /><span>1</span>
+          <input type="range" name="movie" id="movie" min="1" max="5" />
+          <span>5</span><br /><br />
+
+          <!-- <input type="button" value="Login" > its wrong way of sumit button -->
+          <!-- <input type="submit" value="Login" /> its right way to submit the form -->
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" /><br /><br />
+
+          <!-- name="" attribute used to access from Backend -->
+          <input type="datetime-local" name="date" id="date" /><br /><br />
+
+          <label for="color">choose a color</label>
+          <input type="color" name="color" id="color" /><br /><br />
+
+          <label for="number">Choose a number</label>
+          <input type="number" name="number" id="number" /><br /><br />
+
+          <input type="hidden" name="name" value="raghu" />
+
+          <!-- <input type="image" src="./iPhone_max.jpg" alt="" /> -->
+
+          <br />
+
+          <!-- http://127.0.0.1:5500/main.py?file=Screenshot+2024-05-05+030401.png
+         &movie=2&dob=2024-06-24&date=2024-06-24T09%3A26&color=%23ba2c2c
+         &number=9&name=raghu -->
+          <button type="submit">submit</button>
+          <button type="reset">clear</button>
+        </div>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number" step="2" /><br /><br />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          pattern="[0-9A-Z]{6}"
+        /><br /><br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">clear</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

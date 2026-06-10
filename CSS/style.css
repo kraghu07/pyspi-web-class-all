@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body {
+  background-color: red;
+  background-clip: url(https://www.youtube.com/watch?v=2ilvok75Tqs&t=18s);
+  /* background-image: url(./Screenshot\ 2024-05-07\ 115907.png), */
+  /* url(./Screenshot\ 2024-05-07\ 115730.png); */
+  /* background-image: url(./Screenshot\ 2024-05-07\ 115730.png); */
+
+  background-repeat: repeat-y, repeat-y;
+  /* background-repeat: no-repeat,no-repeat; */
+  /* background-repeat: repeat-y;l̥ */
+  /* background-attachment: fixed; */
+  background-position: top right, top left;
+  background-size: 50% 50%, 50% 50%;
+  /* background-position-x: a; */
+  /* display: flex;
+  flex-direction: column; */
+  /* border: 0; */
+  /* margin-top: 25px; */
+  margin: 45px;
+}
+
+h1 {
+  color: yellowgreen;
+  /* text-shadow: palegoldenrod; */
+  text-align: right;
+}
+p {
+  color: white;
+  border: 5px;
+  padding: 25px;
+  margin-top: 50px;
+}

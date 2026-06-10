@@ -1,0 +1,193 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(85, 76, 76);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+}
+h1 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+div.container {
+  border: 2px solid white;
+  border-radius: 1em;
+  padding: 2em;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  line-height: 3em;
+  display: grid;
+  place-items: center;
+}
+.container ul {
+  list-style: none;
+}
+.container ul li {
+  border: 1px solid white;
+  padding: 0.5em 3em;
+  margin: 0.25em;
+  cursor: pointer;
+} */
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Nuito:ital,wght@0,200' 
+);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: url(./th.jpeg) no-repeat center center/cover;
+
+}
+.container{
+    max-width: 500px;
+    text-align: center;
+}
+.container .header{
+    border: 3px solid wheat;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    border-radius: 1em;
+
+}
+.container .main{
+    background-color: white;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+.container .main .quote-content{
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1.5em;
+
+}
+.container .main .author{
+    color: red;
+    font-size: 1.6em;
+    margin-top: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.container.main #button{
+    margin-top: 2em;
+}
+#button button{
+    padding: 1em;
+    background-color: purple;
+
+}import url();
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: url(./th.jpeg) no-repeat center center/cover;
+
+}
+.container{
+    max-width: 500px;
+    text-align: center;
+}
+.container .header{
+    border: 3px solid wheat;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    border-radius: 1em;
+
+}
+.container .main{
+    background-color: white;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+.container .main .quote-content{
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1.5em;
+
+}
+.container .main .author{
+    color: red;
+    font-size: 1.6em;
+    margin-top: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.container.main #button{
+    margin-top: 2em;
+}
+#button button{
+    padding: 1em;
+    background-color: purple;
+
+}
+*/
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Nuito:ital,wght@0,200')
+
+
+/* 26/9/24 */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #ddd;
+}
+.cont{
+  background-color: white;
+  width: 450px;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.ac_item{
+  border-top: 1px solid #fff;
+}
+.ac_header{
+  width: 100%;
+  padding: 0.75em;
+  text-align: left;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.ac_header:hover{
+ background-color: rgb(62,111,201);
+}
+.ac_content{
+  padding: 0.75em;
+  display: none;
+}

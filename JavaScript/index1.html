@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .container {
+        border: 1px solid blue;
+        height: 400px;
+        width: 250px;
+      }
+      input {
+        height: 300px;
+        width: 300px;
+      }
+      td {
+        font-size: x-large;
+      } */
+      .container {
+        border: 1px solid blue;
+        padding: 20px;
+        width: 420px;
+        margin: auto;
+      }
+      input {
+        height: 50px;
+        width: 100%;
+        font-size: large;
+        text-align: right;
+      }
+      td {
+        font-size: x-large;
+        text-align: center;
+        cursor: pointer;
+      }
+      table {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <script>
+      var a = 10;
+      console.log(a);
+    </script> -->
+
+    <div class="container">
+      <div class="inputScreen">
+        <input type="text" id="display" disabled />
+      </div>
+      <div class="keys">
+        <table border="1px solid black" cellpadding="35px">
+          <!-- style="border-collapse: collapse" -->
+          <tbody>
+            <tr>
+              <td onclick="clearDisplay()">AC</td>
+              <td onclick="atd('/')">/</td>
+              <td onclick="atd('*')">*</td>
+              <td onclick="atd('-')">-</td>
+            </tr>
+            <tr>
+              <td onclick="atd('7')">7</td>
+              <td onclick="atd('8')">8</td>
+              <td onclick="atd('9')">9</td>
+              <td onclick="atd('%')">%</td>
+            </tr>
+            <tr>
+              <td onclick="atd('4')">4</td>
+              <td onclick="atd('5')">5</td>
+              <td onclick="atd('6')">6</td>
+              <td onclick="atd('+')">+</td>
+            </tr>
+            <tr>
+              <td onclick="atd('1')">1</td>
+              <td onclick="atd('2')">2</td>
+              <td onclick="atd('3')">3</td>
+              <td rowspan="0" onclick="calculateResult()">Enter</td>
+            </tr>
+            <tr>
+              <td onclick="atd('0')">0</td>
+              <td>.</td>
+              <td onclick="deleteLast()">del</td>
+              <!-- <td rowspan="2">Enter</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="inaex1.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .container {
+        border: 1px solid blue;
+        padding: 20px;
+        width: 320px;
+        margin: auto;
+      }
+      input {
+        height: 50px;
+        width: 100%;
+        font-size: large;
+        text-align: right;
+      }
+      td {
+        font-size: x-large;
+        text-align: center;
+        cursor: pointer;
+      }
+      table {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputScreen">
+        <input type="text" id="display" disabled />
+      </div>
+      <div class="keys">
+        <table>
+          <tbody>
+            <tr>
+              <td onclick="clearDisplay()">AC</td>
+              <td onclick="appendToDisplay('/')">/</td>
+              <td onclick="appendToDisplay('*')">*</td>
+              <td onclick="appendToDisplay('-')">-</td>
+            </tr>
+            <tr>
+              <td onclick="appendToDisplay('7')">7</td>
+              <td onclick="appendToDisplay('8')">8</td>
+              <td onclick="appendToDisplay('9')">9</td>
+              <td rowspan="2" onclick="appendToDisplay('+')">+</td>
+            </tr>
+            <tr>
+              <td onclick="appendToDisplay('4')">4</td>
+              <td onclick="appendToDisplay('5')">5</td>
+              <td onclick="appendToDisplay('6')">6</td>
+            </tr>
+            <tr>
+              <td onclick="appendToDisplay('1')">1</td>
+              <td onclick="appendToDisplay('2')">2</td>
+              <td onclick="appendToDisplay('3')">3</td>
+              <td rowspan="2" onclick="calculateResult()">Enter</td>
+            </tr>
+            <tr>
+              <td onclick="appendToDisplay('0')">0</td>
+              <td onclick="appendToDisplay('.')">.</td>
+              <td onclick="deleteLast()">del</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      function appendToDisplay(value) {
+        document.getElementById("display").value += value;
+      }
+
+      function clearDisplay() {
+        document.getElementById("display").value = "";
+      }
+
+      function deleteLast() {
+        let display = document.getElementById("display");
+        display.value = display.value.slice(0, -1);
+      }
+
+      function calculateResult() {
+        let display = document.getElementById("display");
+        try {
+          display.value = eval(display.value);
+        } catch {
+          display.value = "Error";
+        }
+      }
+    </script>
+  </body>
+</html> -->

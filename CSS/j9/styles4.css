@@ -1,0 +1,46 @@
+/* body {
+  height: 100vh;
+  width: 100vw;
+  background-image: repeating-linear-gradient(
+    orange 0% 10%,
+    white 10% 30%,
+    green 30% 50%
+  );
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flag {
+  height: 450px;
+  width: 900px;
+  border: 2px solid black;
+}
+
+.chakra {
+  height: 150px;
+  max-width: 150px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: repeating-conic-gradient(
+    #000080 0deg 5deg,
+    white 5deg 20deg
+  );
+}
+
+div.top {
+  height: 150px;
+  background-color: orange;
+}
+div.middle {
+  height: 150px;
+  background-color: white;
+}
+div.bottom {
+  height: 150px;
+  background-color: green;
+}

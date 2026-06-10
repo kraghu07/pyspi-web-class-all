@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style19.css" />
+    <style>
+      /* nav {
+        display: flex;
+        background-color: rgb(156, 226, 76);
+        justify-content: space-between;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        background-color: rgb(156, 226, 76);
+        list-style-type: none;
+        justify-content: flex-end;
+        justify-content: space-around;
+        width: 50%;
+        justify-content: space-evenly;
+        margin-top: 1px;
+      }
+      nav h2 {
+        margin-left: 20px;
+        font-size: 2em;
+      }
+      nav ul {
+        display: flex;
+        margin: 50%;
+        justify-content: space-evenly;
+        font-size: medium;
+        margin-top: 8px;
+        align-items: center;
+      } */
+      .container {
+        /* margin: 0px; */
+        /* display: flex; */
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* height: 70vh; */
+        /* align-items: center; */
+        /* align-items: baseline; */
+        /* align-items: stretch; */
+        /* align-items: safe; */
+        /* main axix is titled */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap;
+        align-content: center; */
+        /* 25/7/24 */
+        /* grid-template-columns: 300px 300px 100px;
+        grid-template-rows: 200px auto 300px; */
+        /* grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr; */
+        display: grid;
+        border: 2px solid red;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 150px);
+        gap: 20px 20px;
+        /* column-gap: 30px;
+        row-gap: 30px; */
+      }
+      .items {
+        /* background-color: rgb(176, 162, 205);
+        height: 200px;
+        width: 200px;
+        margin: 8px;
+        color: white; */
+        /* 25/7/24 */
+        font-size: 3em;
+        background-color: steelblue;
+        border: 2px solid skyblue;
+        text-align: center;
+      }
+      /* .items:nth-child(1) {
+        order: 4;
+        flex-grow: 2;
+        flex: shrink 0;
+        align-self: center;
+      } */
+      .items:nth-child(2) {
+        order: 4;
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 50;
+        align-self: flex-end;
+      }
+      .items:nth-child(3) {
+        order: 1;
+        align-self: stretch;
+      }
+      .items:nth-child(4) {
+        order: 1;
+        align-self: flex-end;
+      }
+
+      /* .items:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .items:nth-child(9) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .items:nth-child(2) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .items:nth-child(7) {
+        grid-row-start: 4;
+        grid-row-end: 6;
+      }
+      .items:nth-child(3) {
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+      .items:nth-child(8) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+      <h2>Medium</h2>
+      <ul>
+        <li>Our story</li>
+        <li>Membership</li>
+        <li>Write</li>
+        <li>Sign in</li>
+        <li
+          style="
+            border-radius: 20px;
+            color: black;
+            background-color: white;
+            padding: 10px 12px;
+          "
+        >
+          Get Started
+        </li>
+      </ul>
+    </nav> -->
+    <div class="container">
+      <div class="items">item1</div>
+      <div class="items">item2</div>
+      <div class="items">item3</div>
+      <div class="items">item4</div>
+      <div class="items">item5</div>
+      <div class="items">item6</div>
+      <div class="items">item7</div>
+      <div class="items">item8</div>
+      <div class="items">item9</div>
+      <!-- <div class="items">item10</div>
+      <div class="items">item11</div>
+      <div class="items">item44</div>  -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(18, 16, 16);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+}
+div.ex1 {
+  border: 2px solid white;
+  border-radius: 1em;
+  padding: 5em;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+button{
+  background-color: rgb(18, 16, 16);
+  color: white;
+  border-radius: 10%;
+  height: 30px;
+  width: 80px;
+  border: 2px solid white;
+  margin: 0.5em;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  background-color: white;
+  color: rgb(85, 76, 76);
+  margin: 1em;
+  padding: 1em;
+}
+
+div.container h1#title {
+  animation: none;
+  columns: white;
+}
+
+div.container h1#title:hover {
+  /* animation: blink 1s step-start infinite; */
+  animation: blink 1s step-start infinite, colorChange 1s infinite;
+  /* animation: colorChange 3s infinite;  */
+  /* color: silver; */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  /* 100% {
+    color: rgb(113, 141, 131);
+    opacity: 0;
+  } */
+}
+
+/* Styling for the list items */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Blink animation now only affects opacity */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Separate animation for color changes */
+@keyframes colorChange {
+  0% {
+    color: gold;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/* Scale up the list items on hover */
+li:hover {
+  transform: scale(1.2);
+  border-radius: 3%;
+  color: silver;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 14, 18);
+    color: white;
+}
+
+.container{
+    height: 45vh;
+    width: 15vw;
+    border: 1px solid white;
+    margin: 500px;
+    border-radius: 5%;
+}
+
+.list-items{
+    align-items: center;
+    margin-left: 50px;
+    background-color: white;
+    padding: 0.5em;
+    color: black;
+    margin: 15px;
+    border: 5px;
+    align-content: center;
+} */

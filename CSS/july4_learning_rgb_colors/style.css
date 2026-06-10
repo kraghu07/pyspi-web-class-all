@@ -1,0 +1,25 @@
+/* *{
+    color: blue;
+} */
+
+/* h1.align-center{
+    color: rgb(12, 190, 36);
+} */
+
+h1 {
+  /* color: gold; */
+
+  /* color: rgb(0, 0, 0); */
+  /* color: rgb(0, 0, 255); */
+  /* color: rgb(0, 255, 0); */
+  /* color: rgb(255, 0, 0); */
+  /* color: rgb(255, 255, 255);
+    color: rgba(255, 0, 0,0.5);
+    color: rgba(255, 0, 0,0); */
+  /* color: rgba(255, 0, 0,1); */
+  /* color: #eeeeee; */
+  /* color: #ddd; */
+  /* color: hsl(255, 80%, 50%); */
+  /* color: hsl(255, 80%, 50%, 1); */
+  /* color: rgba(255, 0, 0,0.8); */
+}

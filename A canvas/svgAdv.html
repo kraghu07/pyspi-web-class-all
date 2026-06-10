@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Advanced SVG Animation</h2>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="red">
+            <animate 
+                attributeName="cx" 
+                from="50" to="150" 
+                dur="2s" 
+                repeatCount="indefinite" />
+            <animate 
+                attributeName="fill" 
+                values="red;blue;green;red" 
+                dur="4s" 
+                repeatCount="indefinite" />
+        </circle>
+    </svg>
+</body>
+</html>
