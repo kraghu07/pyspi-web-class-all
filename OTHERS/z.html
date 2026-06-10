@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        align-content: space-between;
+        border: 1px solid red;
+        justify-content: space-between;
+        height: 100px;
+        /* width: 100px; */
+      }
+      .items1 {
+        border: 1px solid red;
+        background-color: blue;
+      }
+      form {
+        height: 400vh;
+        width: 200px;
+        /* background-color: black; */
+        color: white;
+      }
+      fieldset {
+        background-color: rgb(88, 32, 32);
+        border-radius: 0.5em;
+        height: 200px;
+        width: 200px;
+      }
+
+      #submit{
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 0.5em;
+      }
+      input{
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">Title</div>
+      <div class="item1">
+        <select>
+          <optgroup>Menu</optgroup>
+          <option value="about">menu</option>
+          <option value="about" id="About">About</option>
+          <option value="about" id="FAANG">FAANG</option>
+          <option value="about" id="FinTch">FinTch</option>
+        </select>
+      </div>
+    </div>
+    <!-- <div class="item1">3</div>
+    <div class="item1">4</div>
+    <div class="item1">5</div> -->
+    <div class="Faang">
+      <form action="main.txt" method="post">
+        <fieldset>
+          <legend>Add here</legend>
+
+          <label for="cname">Company : </label>
+          <input type="text" name="" id="cname" /><br />
+
+          <label for="roleName">Role : </label>
+          <input type="text" name="" id="roleName" /><br />
+
+          <label for="JDname">JOBD : </label>
+          <input type="text" name="" id="JDname" /><br />
+
+          <button type="button">
+            <a href="https://careers.microsoft.com/v2/global/en/home.html"
+              >apply here</a
+            >
+          </button>
+          <button type="button" id="submit">Submit</button>
+          <!-- <input type="button" name="" id="cname"> -->
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

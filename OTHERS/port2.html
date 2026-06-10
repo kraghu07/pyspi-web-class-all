@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe Portfolio</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #03045E;
+      }
+h2{
+    color: #F5EE84;
+}
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      nav ul li {
+        margin: 0 1em;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      header {
+        text-align: center;
+        padding: 2em 0;
+        background-color: #FBF8CC;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+
+      #portfolio,
+      #about,
+      #contact,
+      #experience {
+        padding: 2em;
+        background-color: #FBF8CC;
+        margin: 1em 0;
+      }
+
+      .project {
+        background-color: #FBF8CC;
+        padding: 1em;
+        margin: 1em 0;
+        border-left: 5px solid #ffcc00;
+      }
+
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .timeline-item {
+        background-color: #FBF8CC;
+        margin: 1em 0;
+        padding: 1em;
+        border-left: 5px solid #ffcc00;
+        width: 80%;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form label {
+        margin: 0.5em 0 0.2em;
+      }
+
+      form input,
+      form textarea {
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      form button {
+        padding: 0.7em;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: #555;
+      }
+
+      .elementor-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        fill: #0077b5; /* LinkedIn blue color */
+        margin: 0 10px;
+      }
+
+      .elementor-icon:hover {
+        fill: #005582; /* Darker blue on hover */
+      }
+
+      .elementor-screen-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+      <h1>SDE</h1>
+      <img src="./raghu.jpg" alt="John Doe" class="profile-pic" />
+      <p>
+        Hi, I'm K RAGHU, a Software Development Engineer with excellent Skills...
+      </p>
+    </header>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="project">
+        <h3>Weather App using API</h3>
+        <p>
+          A web application that fetches and displays real-time weather data
+          based on user-provided geographical coordinates.
+        </p>
+        <ul>
+          <li>
+            <strong>Technologies Used:</strong> Python, Flask, HTML, CSS,
+            JavaScript, OpenWeatherMap API
+          </li>
+          <li>
+            <strong>Features:</strong>
+            <ul>
+              <li>Fetches real-time weather data for a given location.</li>
+              <li>Displays temperature, humidity, and weather conditions.</li>
+              <li>Handles invalid user input with error messages.</li>
+              <li>Option to fetch weather data for multiple locations.</li>
+            </ul>
+          </li>
+          <li><strong>Link:</strong> <a href="#">GitHub Repository</a></li>
+        </ul>
+      </div>
+      <!-- Add more projects here -->
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm a fresher Python full-stack developer with a passion for building
+        web applications. I have experience with Python, JavaScript, and various
+        frameworks like Django and React. I enjoy solving complex problems and
+        continuously learning new technologies.
+      </p>
+      <h3>Skills</h3>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Django</li>
+        <li>Flask</li>
+        <li>React</li>
+        <li>HTML & CSS</li>
+        <li>Git</li>
+        <li>Docker</li>
+      </ul>
+      <h3>Education</h3>
+      <p>Bachelor's Degree in Computer Science from XYZ University</p>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>2023</h3>
+            <p>AIML Intern at Karunadu technologies pvt ltd</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2023</h3>
+            <p>DA Intern at Pantech Solutions</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2023</h3>
+            <p>Intern at Pantech Solutions pvt ltd</p>
+          </div>
+        </div>
+      </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form
+        action="mailto:raghukumarappa2002@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Email: raghukumarappa2002@gmail.com</p>
+      <a
+        class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-55278da"
+        href="https://www.linkedin.com/in/k-raghu-73003a219/"
+        target="_blank"
+      >
+        <span class="elementor-screen-only">Linkedin</span>
+        <svg
+          class="e-font-icon-svg e-fab-linkedin"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+          ></path>
+        </svg>
+      </a>
+      <a class="elementor-icon elementor-social-icon elementor-social-icon-github" href="https://github.com/kraghu07" target="_blank">
+        <span class="elementor-screen-only">GitHub</span>
+        <svg class="e-font-icon-svg e-fab-github" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577v-2.17c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.746.083-.73.083-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.805 1.305 3.49.997.11-.774.42-1.305.76-1.605-2.665-.3-5.467-1.335-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.303-.535-1.52.115-3.165 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.655 1.645.245 2.862.12 3.165.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22v3.285c0 .32.215.695.825.575C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+    </a>
+    
+    <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram" href="https://www.instagram.com/raghu_k07/" target="_blank">
+        <span class="elementor-screen-only">Instagram</span>
+        <svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 186.6c-39.6 0-71.7-32.1-71.7-71.7s32.1-71.7 71.7-71.7 71.7 32.1 71.7 71.7-32.1 71.7-71.7 71.7zm146.4-194.3c0 14.9-12.1 27-27 27s-27-12.1-27-27 12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.6s-57.9-34.5-93.6-36.2c-37.1-2.1-148.4-2.1-185.5 0-35.7 1.7-67.3 9.9-93.6 36.2s-34.5 57.9-36.2 93.6c-2.1 37.1-2.1 148.4 0 185.5 1.7 35.7 9.9 67.3 36.2 93.6s57.9 34.5 93.6 36.2c37.1 2.1 148.4 2.1 185.5 0 35.7-1.7 67.3-9.9 93.6-36.2s34.5-57.9 36.2-93.6c2.1-37.1 2.1-148.4 0-185.5zm-48.1 224.1c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.9 9s-103.5 2.6-132.9-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.9s-2.6-103.5 9-132.9c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.9-9s103.5-2.6 132.9 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.9s2.6 103.5-9 132.9z"/>
+        </svg>
+    </a>
+    
+    <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter" href="https://twitter.com/your-profile" target="_blank">
+        <span class="elementor-screen-only">Twitter</span>
+        <svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.7-298.7 298.7-59.5 0-114.7-17.2-161.1-47.1 8.4.9 16.6 1.2 25.3 1.2 49.1 0 94.2-16.6 130.3-44.8-46.1-.9-84.8-31.2-98.1-72.8 6.5.">
+    </section>
+  </body>
+</html>

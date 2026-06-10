@@ -1,0 +1,856 @@
+media types/queries 
+cascading order
+caniuse.com is used to check dimesions mobile tab desktop
+
+https://developer.chrome.com/blog/new-in-devtools-127/?utm_source=devtools
+
+
+
+
+
+;
+    transform: translateX(200px);
+}
+
+.child1:hover{
+    transform: rotate(20deg);
+    /* transform: rotateX(90deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: skew(20deg); */
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+    /* transform: scale(1.5); */
+    /* transform: scaleX(1.2); */
+    /* transform: scaleY(1.2); */
+    /*transform: translate(100px,100px); */	
+    /* transform: translateX(200px); */
+    /* transform: translateY(200px); */
+    /* transform-origin: 20% 30%; */
+    /* transform: perspective(3d); */
+}
+
+
+---------------------------------css------------------------------------
+body {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+div.container {
+    border: 5px solid black;
+    height: 600px;
+    width: 900px;
+    display: flex;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.child1 {
+    border: 2px solid green;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    position: absolute;
+    background-color: purple;
+    font-size: xx-large;
+    color: white;
+    /* transition-property: width,height; */
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 0.5ms;
+    transition-timing-function: linear; */
+    transition: all 0.5s 0.5ms linear;
+}
+
+
+.child1:hover{
+    /* width: 300px;
+    height: 400px; */
+    
+    transform: scale(2);
+}
+
+
+
+---------------------------------transition timing function--------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+   <div class="child">container ease</div>
+   <div class="child">container ease-in</div>
+   <div class="child">container ease-out</div>
+   <div class="child">container linear</div>
+   <div class="child">container cubic-beizer</div>
+</div>
+</body>
+
+</html>
+
+-----------------------------------------css-------------------------------------------------
+
+
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+div.container {
+    border: 5px solid black;
+    height: 600px;
+    width: 900px;
+    
+    
+    
+    margin: auto;
+}
+
+.child{
+    border: 2px solid green;
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+    background-color: purple;
+    font-size: xx-large;
+    color: white;
+}
+.child:nth-child(1){
+    transition: 2s ease;
+}
+.child:nth-child(2){
+    transition: 2s ease-in;
+}
+
+.child:nth-child(3){
+    transition: 2s ease-out;
+    
+}
+
+.child:nth-child(4){
+    transition: 2s linear;
+
+}
+
+.child:nth-child(5){
+    transition: 2s cubic-bezier(0.74,-0.2, 0.44, 1.16);
+}
+.child:hover{
+    width: 700px;
+}
+
+---------------------------------------------------------------------------------tasks----------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- <div class="container">
+   <img src="./licensed-image.jpg" alt="ronaldo">
+   <div class="text">Cristiano ronaldo</div>
+</div>
+<div class="container">
+   <img src="./licensed-image.jpg" alt="ronaldo">
+   <div class="text">Cristiano ronaldo</div>
+</div> -->
+<!-- <nav>hello</nav> -->
+<!-- <div class="hero-section"> -->
+   <!-- <img src="./licensed-image.jpg" alt=""> -->
+<!-- </div> -->
+
+<!-- <div class="card">
+   <img src="./licensed-image.jpg" alt="ronaldo">
+   <div class="text">Ronaldo</div>
+</div> -->
+<div class="card">
+   <img src="./licensed-image.jpg" alt="ronaldo">
+   <div class="overlay">
+      <div class="text">Ronaldo</div>
+   </div>
+</div>
+</body>
+
+</html>
+
+
+----------------------------------------------------------------------------css-------------------------------------------------------
+
+/* div.container{
+    height: 400px;
+    width: 500px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    cursor: pointer;
+    overflow: hidden;
+} */
+
+/* to make it responsive */
+/* div.container img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: 0.2s ease;
+} */
+/* div.container div.text{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+div.container:hover img{
+    filter: grayscale(1.2);
+    transform: scale(1.2);
+    opacity: 0.4;
+} */
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    height: 100px;
+    background-color: aqua;
+}
+.hero-section{
+    max-width: 100%;
+    height: 70vh;
+    margin: 1em;
+    padding: 0 2em;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./licensed-image.jpg);
+    background-size: cover;
+} */
+/* .hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* div.card{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+div.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.2s ease;
+}
+div.card div.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    background-color: crimson;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    display: none;
+    transition: 0.2s ease;
+}
+div.card:hover img{
+    filter: blur(1px);
+}
+div.card:hover div.text{
+    display: block;
+} */
+
+
+div.card{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+div.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+div.card .overlay{
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+div.card .text{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+}
+div.card:hover .overlay{
+    width: 100%;
+}
+
+---------------------------------------------------------------------flex-box   monday---------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      .container{
+         /* border: 2px solid red; */
+         /* display: flex; */
+         /* justify-content:space-evenly; */
+         /* height: 100vh; */
+         /* align-items: center; */
+         /* align-items: baseline; */
+         /* main axis is titled */
+         /* flex-direction: column; */
+         /* justify-content: flex-end; */
+         /* align-items: center;  */
+         /* flex-direction: row-reverse; */
+         /* flex-direction: column-reverse; */
+      }
+      /* .items{
+         background-color: blueviolet;
+         height: 100px;
+         width: 100px;
+         margin: 10px;
+         color: white;
+      } */
+      /* .items:nth-child(1){
+         font-size: 40px;
+      }
+      .items:nth-child(2){
+         font-size: 80px;
+      }
+      .items:nth-child(3){
+         font-size: 60px;
+      } */
+       nav{
+         display: flex;
+         justify-content: space-between;
+         /* background-color: red; */
+         align-items: center;
+       }
+       nav h2{
+         margin-left: 1em;
+         font-size: 2em;
+       }
+       nav ul{
+         width: 50%;
+         display: flex;
+         justify-content: space-evenly;
+         list-style: none;
+         align-items: center;
+       }
+       nav ul li:last-child{
+         background-color: black;
+         color: white;
+         padding: 1em 2em;
+         border-radius: 3em;
+       }
+    </style>
+</head>
+
+<body>
+<!-- <div class="container">
+   <div class="items">item1</div>
+   <div class="items">item2</div>
+   <div class="items">item3</div>
+   <div class="items">item4</div>
+</div> -->
+<nav>
+   <h2>Medium</h2>
+   <ul>
+      <li>Our story</li>
+      <li>Membership</li>
+      <li>Write</li>
+      <li>Sign in</li>
+      <li>Get started</li>
+   </ul>
+</nav>
+</body>
+
+
+
+---------------------------------------------------------------------------flex-item properties--------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      .container{
+         border: 2px solid red;
+         height: 90vh;
+         display: flex;
+      } 
+      .items{
+         background-color: blueviolet;
+         /* height: 200px; */
+         width: 200px;
+         margin: 10px;
+         color: white;
+      }
+      .items:nth-child(1){
+         /* order: 1; */
+         /* flex-basis:300px; */
+         align-self: flex-end;
+      }
+      .items:nth-child(2){
+         /* order: 1; */
+         /* flex-grow: 3; */
+         /* flex-shrink: 0; */
+      }
+      .items:nth-child(3){
+         /* order: 1; */
+         /* flex-grow: 2; */
+         align-self: center;
+      }
+      .items:nth-child(4){
+         /* order:1; */
+      }
+
+   
+    </style>
+</head>
+
+<body>
+<div class="container">
+   <div class="items">item1</div>
+   <div class="items">item2</div>
+   <div class="items">item3</div>
+   <div class="items">item4</div>
+</div>
+
+</body>
+
+</html>
+
+-------------------------------------------grid---------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>Header</header>
+        <aside>aside</aside>
+        <section>section</section>
+        <article>Article1</article>
+        <article>Article2</article>
+        <footer>footer</footer>
+    </main>
+</body>
+</html>
+
+---------------------------css---------------
+*{
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+body{
+  max-width: 100vw;
+}
+main{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 'header header header'
+  'aside section section'
+  'aside article1 article2'
+  'footer footer footer';
+}
+main *{
+  border: 2px solid skyblue;
+  background-color: steelblue;
+  padding: 2em;
+  color: white;
+  align-content: center;
+  text-align: center;
+}
+header{
+  grid-area: header;
+}
+aside{
+  grid-area: aside;
+}
+section{
+  grid-area: section;
+}
+article:nth-of-type(1){
+  grid-area: article1;
+}
+article:nth-of-type(2){
+  grid-area: article2;
+}
+footer{
+  grid-area: footer;
+}
+
+
+
+
+
+------------------------------------------------testimonials grid section--------------------------------------------------------------------------
+css-------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.card {
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    line-height: 2em;
+}
+
+.card header {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 1em;
+}
+header .header_content{
+margin-left: 2em;
+}
+header .header_content p{
+    opacity: 50%;
+}
+header img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.card-bg-voilet{
+    background-color: hsl(263, 55%, 52%);
+}
+.card-bg-grayblue{
+    background-color: hsl(217, 19%, 35%);
+}
+.card-bg-blackblue{
+    background-color: hsl(219, 29%, 14%);
+}
+.card-bg-voilet,.card-bg-grayblue,.card-bg-blackblue{
+    color: #ddd;
+}
+.card .card_lead{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.card .card_quote{
+    margin-bottom: 1em;
+    opacity: 70%;
+}
+.card:nth-child(1){
+    grid-column: 1/3;
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+}
+.card:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.card:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.card:nth-child(5){
+    grid-row: 1/3;
+}
+
+@media screen and (width <= 375px) {
+    .wrapper{
+        max-width:375px;
+        grid-template-columns: 1fr;
+    }
+    .card:nth-child(1){
+        grid-area: 1/1/2/2;
+    }
+    .card:nth-child(2){
+        grid-area: 2/1/3/2;
+    }
+    .card:nth-child(3){
+        grid-area: 3/1/4/2;
+    }
+    .card:nth-child(4){
+        grid-area: 4/1/5/2;
+    }
+    .card:nth-child(5){
+        grid-area: 5/1/6/2;
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-template</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card card-bg-voilet">
+            <header>
+                <img src="./images/image-daniel.jpg" alt="Daniel Clifford">
+                <div class="header_content">
+                    <h3>Daniel Clifford</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                I received a job offer mid-course, and the subjects I learned were current, if not more so,
+                in the company I joined. I honestly feel I got every penny’s worth.
+            </p>
+            <p class="card_quote">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make
+                a
+                transition and have heard some people who had an amazing experience here. I signed up
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+                The next 12 weeks was the best - and most grueling - time of my life. Since completing
+                the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </div>
+        <div class="card card-bg-grayblue">
+            <header>
+                <img src="./images/image-jonathan.jpg" alt="Jonathan Walters">
+                <div class="header_content">
+                    <h3>Jonathan Walters</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                The team was very supportive and kept me motivated
+            </p>
+            <p class="card_quote">
+                “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                for a big company. This was one of the best investments I’ve made in myself. ”
+            </p>
+        </div>
+        <div class="card">
+            <header>
+                <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon">
+                <div class="header_content">
+                    <h3>Jeanette Harmon</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                An overall wonderful and rewarding experience
+            </p>
+            <p class="card_quote">
+                “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+                while doing something I love. ”
+            </p>
+        </div>
+        <div class="card card-bg-blackblue">
+            <header>
+                <img src="./images/image-patrick.jpg" alt="Patrick Abrams">
+                <div class="header_content">
+                    <h3>Patrick Abrams</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+                learning from their experiences was easy.
+            </p>
+            <p class="card_quote">
+                “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+                gave me the confidence necessary to be able to go out in the world and present myself as a capable
+                junior developer. The standard is above the rest. You will get the personal attention you need from
+                an incredible community of smart and amazing people. ”
+            </p>
+        </div>
+        <div class="card">
+            <header>
+                <img src="./images/image-kira.jpg" alt="Kira Whittle">
+                <div class="header_content">
+                    <h3>Kira Whittle</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                Such a life-changing experience. Highly recommended!
+            </p>
+            <p class="card_quote">
+                “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+                professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+                student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+                did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+                project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+                could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+                experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+                100% recommend! ”
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+---------------------------------------------------------html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-template</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card card-bg-voilet">
+            <header>
+                <img src="./images/image-daniel.jpg" alt="Daniel Clifford">
+                <div class="header_content">
+                    <h3>Daniel Clifford</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                I received a job offer mid-course, and the subjects I learned were current, if not more so,
+                in the company I joined. I honestly feel I got every penny’s worth.
+            </p>
+            <p class="card_quote">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make
+                a
+                transition and have heard some people who had an amazing experience here. I signed up
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+                The next 12 weeks was the best - and most grueling - time of my life. Since completing
+                the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </div>
+        <div class="card card-bg-grayblue">
+            <header>
+                <img src="./images/image-jonathan.jpg" alt="Jonathan Walters">
+                <div class="header_content">
+                    <h3>Jonathan Walters</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                The team was very supportive and kept me motivated
+            </p>
+            <p class="card_quote">
+                “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                for a big company. This was one of the best investments I’ve made in myself. ”
+            </p>
+        </div>
+        <div class="card">
+            <header>
+                <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon">
+                <div class="header_content">
+                    <h3>Jeanette Harmon</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                An overall wonderful and rewarding experience
+            </p>
+            <p class="card_quote">
+                “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+                while doing something I love. ”
+            </p>
+        </div>
+        <div class="card card-bg-blackblue">
+            <header>
+                <img src="./images/image-patrick.jpg" alt="Patrick Abrams">
+                <div class="header_content">
+                    <h3>Patrick Abrams</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+                learning from their experiences was easy.
+            </p>
+            <p class="card_quote">
+                “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+                gave me the confidence necessary to be able to go out in the world and present myself as a capable
+                junior developer. The standard is above the rest. You will get the personal attention you need from
+                an incredible community of smart and amazing people. ”
+            </p>
+        </div>
+        <div class="card">
+            <header>
+                <img src="./images/image-kira.jpg" alt="Kira Whittle">
+                <div class="header_content">
+                    <h3>Kira Whittle</h3>
+                    <p>Verified Graduate</p>
+                </div>
+            </header>
+            <p class="card_lead">
+                Such a life-changing experience. Highly recommended!
+            </p>
+            <p class="card_quote">
+                “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+                professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+                student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+                did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+                project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+                could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+                experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+                100% recommend! ”
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

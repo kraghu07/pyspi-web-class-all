@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fbf8cc;
+      }
+
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      nav ul li {
+        margin: 0 1em;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      header {
+        text-align: center;
+        padding: 2em 0;
+        background-color: #fff;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 0;
+      }
+
+      .timeline-item {
+        background-color: #fff;
+        margin: 1em 0;
+        padding: 1em;
+        border-left: 5px solid #ffcc00;
+        width: 80%;
+      }
+
+      #projects {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0;
+      }
+
+      .project {
+        background-color: #fbf8cc;
+        padding: 1em;
+        width: 45%;
+        text-align: center;
+      }
+
+      .project img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Product Designer</h1>
+      <img src="./raghu.jpg" alt="John Doe" class="profile-pic" />
+      <p>
+        Hi, I'm John Doe, a product designer with over 5 years of experience...
+      </p>
+    </header>
+    <section id="experience">
+      <div class="timeline">
+        <div class="timeline-item">
+          <h2>  
+            Aug 2023 – Sep 2023 </h2>
+          <p><h2>AI-ML Intern</h2> at Karunadu Technologies Pvt Ltd</p>
+        </div>
+        <div class="timeline-item">
+          <h2>2020</h2>
+          <p>Designer at ABC Company</p>
+        </div>
+        <div class="timeline-item">
+          <h2>2018</h2>
+          <p>Junior Designer at DEF Company</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="project">
+        <img src="./Screenshot 2024-05-12 221942.png" alt="Project 1" />
+        <p><h3>Project 1</h3>
+          Developed a machine learning model to predict the brain stroke using
+          MRI images. Implemented algorithms such as GLCM and CNN algorithms to
+          achieve high prediction accuracy.
+        </p>
+      </div>
+      <div class="project">
+        <img src="./Screenshot 2024-09-21 203258.png" alt="Project 2" />
+        <p><h3>Project 2</h3>
+        The Weather App is designed to provide real-time weather
+         information based on user-provided geographical coordinates. 
+         The app features a sleek, dark-themed interface for a modern look and ease of use at any time of day.</p>
+      </div>
+    </section>
+  </body>
+</html>
